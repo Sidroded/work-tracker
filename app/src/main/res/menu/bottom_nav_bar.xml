@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/analytics"
+        android:title="@string/analytic"
+        android:icon="@drawable/ic_analytics"/>
+    <item
+        android:id="@+id/schedule"
+        android:title="@string/schedule"
+        android:icon="@drawable/ic_schedule"/>
+    <item
+        android:id="@+id/task"
+        android:title="@string/task"
+        android:icon="@drawable/ic_task"/>
+</menu>
