@@ -4,4 +4,8 @@
     <string name="analytic">Аналітика</string>
     <string name="schedule">Таймер</string>
     <string name="task">Задачі</string>
+
+    <string name="login_button">Увійти</string>
+    <string name="sign_in_button">Зареєструватись</string>
+    <string name="fill_all_fields_toast">Заповніть всі поля</string>
 </resources>

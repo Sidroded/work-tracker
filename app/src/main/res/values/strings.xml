@@ -3,4 +3,8 @@
     <string name="analytic">Analytics</string>
     <string name="schedule">Timer</string>
     <string name="task">Tasks</string>
+
+    <string name="login_button">Log In</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="fill_all_fields_toast">Fill all fields</string>
 </resources>
