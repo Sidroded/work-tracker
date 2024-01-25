@@ -11,4 +11,7 @@
     <string name="fill_all_fields_toast">Заповніть всі поля</string>
     <string name="wrong_login_or_pass_toast">Невірний імейл або пароль</string>
     <string name="something_wrong_toast">Ой, щось не так</string>
+    <string name="password_mismatch_toast">Паролі не співпадають</string>
+    <string name="password_symbols_validation_toast">Пароль має бути більше 6 символів</string>
+    <string name="enter_correct_email_toast">Введіть коректний імейл</string>
 </resources>

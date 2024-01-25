@@ -55,12 +55,16 @@ public class SignInActivity extends AppCompatActivity {
 
     private boolean fieldsValidation() {
         if (emailEditText.getText().toString().isEmpty() || passwordEditText.getText().toString().isEmpty() || repeatPasswordEditText.getText().toString().isEmpty()) {
+            Toast.makeText(SignInActivity.this, R.string.fill_all_fields_toast, Toast.LENGTH_SHORT).show();
             return false;
         } else if (!passwordEditText.getText().toString().equals(repeatPasswordEditText.getText().toString())) {
+            Toast.makeText(SignInActivity.this, R.string.password_mismatch_toast, Toast.LENGTH_SHORT).show();
             return false;
         } else if (passwordEditText.getText().toString().length() < 6) {
+            Toast.makeText(SignInActivity.this, R.string.password_symbols_validation_toast, Toast.LENGTH_SHORT).show();
             return false;
         } else if (!emailEditText.getText().toString().contains("@")) {
+            Toast.makeText(SignInActivity.this, R.string.something_wrong_toast, Toast.LENGTH_SHORT).show();
             return false;
         } else {
             return true;
