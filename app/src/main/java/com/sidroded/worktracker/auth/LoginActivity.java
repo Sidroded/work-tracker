@@ -1,5 +1,6 @@
 package com.sidroded.worktracker.auth;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -24,7 +25,6 @@ public class LoginActivity extends AppCompatActivity {
     private EditText passwordEditText;
     private Button loginButton;
     private Button signInButton;
-    private final AuthService authService = new AuthService();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,28 +36,36 @@ public class LoginActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.button_login_login_activity);
         signInButton = findViewById(R.id.button_sign_in_login_activity);
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onLoginButtonClick(view);
-            }
-        });
+        loginButton.setOnClickListener(this::onLoginButtonClick);
+
+        signInButton.setOnClickListener(this::onSignInButtonClick);
+    }
+
+    private void onSignInButtonClick(View view) {
+        Intent intent = new Intent(LoginActivity.this, SignInActivity.class);
+        startActivity(intent);
     }
 
     private void onLoginButtonClick(View view) {
-        if (authService.checkFillEditTextLoginActivity(LoginActivity.this, emailEditText, passwordEditText)) {
+        if (checkFillEditTextLoginActivity()) {
             auth.signInWithEmailAndPassword(emailEditText.getText().toString(), passwordEditText.getText().toString())
-                    .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (task.isSuccessful()) {
-                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                                startActivity(intent);
-                            } else {
-                                Toast.makeText(LoginActivity.this, "Невірний імейл або пароль", Toast.LENGTH_SHORT).show();
-                            }
+                    .addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            startActivity(intent);
+                            finish();
+                        } else {
+                            Toast.makeText(LoginActivity.this, R.string.wrong_login_or_pass_toast, Toast.LENGTH_SHORT).show();
                         }
                     });
         }
+    }
+
+    private boolean checkFillEditTextLoginActivity() {
+        if (emailEditText.getText().toString().isEmpty() || passwordEditText.getText().toString().isEmpty()) {
+            Toast.makeText(LoginActivity.this, R.string.fill_all_fields_toast, Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        return true;
     }
 }

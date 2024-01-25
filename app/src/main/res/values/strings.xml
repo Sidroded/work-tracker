@@ -6,5 +6,8 @@
 
     <string name="login_button">Log In</string>
     <string name="sign_in_button">Sign In</string>
+
     <string name="fill_all_fields_toast">Fill all fields</string>
+    <string name="wrong_login_or_pass_toast">Wrong login or password</string>
+    <string name="something_wrong_toast">Something goes wrong</string>
 </resources>
