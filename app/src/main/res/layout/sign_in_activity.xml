@@ -2,28 +2,45 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_image"
+        android:layout_marginStart="16dp"
+        android:layout_above="@+id/edit_text_email_sign_in_activity"/>
 
     <EditText
         android:id="@+id/edit_text_email_sign_in_activity"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/login_hint"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:layout_centerInParent="true"/>
 
     <EditText
         android:id="@+id/edit_text_password_sign_in_activity"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/password_hint"
         android:ems="10"
         android:inputType="textPassword"
         android:layout_below="@+id/edit_text_email_sign_in_activity" />
 
     <EditText
         android:id="@+id/edit_text_repeat_password_sign_in_activity"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/repeat_password_hint"
         android:ems="10"
         android:inputType="textPassword"
         android:layout_below="@+id/edit_text_password_sign_in_activity" />
@@ -31,8 +48,13 @@
 
     <Button
         android:id="@+id/button_sign_in_login_activity"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
         android:text="@string/sign_in_button"
-        android:layout_below="@+id/edit_text_repeat_password_sign_in_activity" />
+        android:textColor="?attr/buttonTextColor"
+
+        android:background="@drawable/rounded_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"/>
 </RelativeLayout>

@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <attr name="bottomNavColor" format="color"/>
+    <attr name="loginButtonColor" format="color"/>
+    <attr name="buttonTextColor" format="color"/>
+    <attr name="backgroundColor" format="color"/>
 </resources>

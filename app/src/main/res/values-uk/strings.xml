@@ -14,4 +14,10 @@
     <string name="password_mismatch_toast">Паролі не співпадають</string>
     <string name="password_symbols_validation_toast">Пароль має бути більше 6 символів</string>
     <string name="enter_correct_email_toast">Введіть коректний імейл</string>
+
+    <string name="forgot_password_text_view">Забули пароль?</string>
+    <string name="login_hint">Імейл</string>
+    <string name="password_hint">Пароль</string>
+    <string name="repeat_password_hint">Повторити пароль</string>
+
 </resources>

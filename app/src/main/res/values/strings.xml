@@ -13,4 +13,9 @@
     <string name="password_mismatch_toast">Password mismatch</string>
     <string name="password_symbols_validation_toast">Password must contain more than 6 characters</string>
     <string name="enter_correct_email_toast">Enter a valid email</string>
+
+    <string name="forgot_password_text_view">Forgot password?</string>
+    <string name="login_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="repeat_password_hint">Repeat password</string>
 </resources>

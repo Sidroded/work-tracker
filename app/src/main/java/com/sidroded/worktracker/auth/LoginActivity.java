@@ -37,7 +37,6 @@ public class LoginActivity extends AppCompatActivity {
         signInButton = findViewById(R.id.button_sign_in_login_activity);
 
         loginButton.setOnClickListener(this::onLoginButtonClick);
-
         signInButton.setOnClickListener(this::onSignInButtonClick);
     }
 
@@ -52,6 +51,7 @@ public class LoginActivity extends AppCompatActivity {
                     .addOnCompleteListener(task -> {
                         if (task.isSuccessful()) {
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             startActivity(intent);
                             finish();
                         } else {
