@@ -14,12 +14,12 @@ import com.sidroded.worktracker.MainActivity;
 import com.sidroded.worktracker.R;
 
 public class SignInActivity extends AppCompatActivity {
-    private static final String TAG = "Work Tracker";
-    private EditText emailEditText;
-    private EditText passwordEditText;
-    private EditText repeatPasswordEditText;
-    private Button signInButton;
-    private FirebaseAuth mAuth;
+    String TAG = "Work Tracker";
+    EditText emailEditText;
+    EditText passwordEditText;
+    EditText repeatPasswordEditText;
+    Button signInButton;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
