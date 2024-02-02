@@ -14,7 +14,15 @@
         <!-- Customize your theme here. -->
         <item name="bottomNavColor">@color/blue_000</item>
         <item name="loginButtonColor">@color/blue_100</item>
-        <item name="buttonTextColor">@color/white</item>
+        <item name="textColor">@color/white</item>
         <item name="backgroundColor">@color/white</item>
+
+        <item name="toolbarBackgroundColor">@color/white</item>
+        <item name="drawerBackgroundColor">@color/blue_100</item>
+    </style>
+    
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
     </style>
 </resources>

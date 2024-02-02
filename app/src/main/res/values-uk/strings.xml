@@ -20,4 +20,14 @@
     <string name="password_hint">Пароль</string>
     <string name="repeat_password_hint">Повторити пароль</string>
 
+    <string name="open_nav">Open Nav</string>
+    <string name="close_nav">Close Nav</string>
+
+    <string name="analytic_drawer">Аналітика</string>
+    <string name="task_drawer">Задачі</string>
+    <string name="productivity_drawer">Продуктивність</string>
+    <string name="configuration_drawer">Конфігураця</string>
+    <string name="settings_drawer">Налаштування</string>
+    <string name="company_drawer">Компанія</string>
+    <string name="log_out_drawer">Вийти</string>
 </resources>

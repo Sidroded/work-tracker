@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:text="@string/sign_in_button"
-        android:textColor="?attr/buttonTextColor"
+        android:textColor="?attr/textColor"
 
         android:background="@drawable/rounded_button"
         android:layout_alignParentBottom="true"

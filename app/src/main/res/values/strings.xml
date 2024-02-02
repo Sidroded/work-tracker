@@ -18,4 +18,15 @@
     <string name="login_hint">Email</string>
     <string name="password_hint">Password</string>
     <string name="repeat_password_hint">Repeat password</string>
+
+    <string name="open_nav">Open Nav</string>
+    <string name="close_nav">Close Nav</string>
+    
+    <string name="analytic_drawer">Analytics</string>
+    <string name="task_drawer">Tasks</string>
+    <string name="productivity_drawer">Productivity</string>
+    <string name="configuration_drawer">Configuration</string>
+    <string name="settings_drawer">Settings</string>
+    <string name="company_drawer">Company</string>
+    <string name="log_out_drawer">Log Out</string>
 </resources>
