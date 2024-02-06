@@ -15,9 +15,14 @@
         <item name="bottomNavColor">@color/blue_500</item>
         <item name="loginButtonColor">@color/blue_300</item>
         <item name="textColor">@color/light_grey</item>
+        <item name="textViewColor">@color/light_grey</item>
         <item name="backgroundColor">@color/blue_600</item>
 
         <item name="toolbarBackgroundColor">@color/blue_600</item>
         <item name="drawerBackgroundColor">@color/blue_400</item>
+        <item name="lunchNewTaskButtonColor">@color/blue_300</item>
+        <item name="pressedLunchNewTaskButtonColor">@color/blue_350</item>
+        <item name="startButtonColor">@color/green_300</item>
+        <item name="pressedStartButtonColor">@color/green_100</item>
     </style>
 </resources>

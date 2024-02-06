@@ -6,4 +6,9 @@
     <attr name="backgroundColor" format="color"/>
     <attr name="toolbarBackgroundColor" format="color"/>
     <attr name="drawerBackgroundColor" format="color"/>
+    <attr name="lunchNewTaskButtonColor" format="color"/>
+    <attr name="pressedLunchNewTaskButtonColor" format="color"/>
+    <attr name="startButtonColor" format="color"/>
+    <attr name="pressedStartButtonColor" format="color"/>
+    <attr name="textViewColor" format="color"/>
 </resources>

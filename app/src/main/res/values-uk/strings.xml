@@ -30,4 +30,11 @@
     <string name="settings_drawer">Налаштування</string>
     <string name="company_drawer">Компанія</string>
     <string name="log_out_drawer">Вийти</string>
+
+    <string name="lunch_stop_button">Lunch Stop</string>
+    <string name="lunch_start_button">Lunch Start</string>
+    <string name="new_task_button">New Task</string>
+    <string name="start_button">Start</string>
+    <string name="stop_button">Stop</string>
+    <string name="save_button">Save</string>
 </resources>

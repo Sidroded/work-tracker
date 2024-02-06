@@ -96,6 +96,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private void configureToolbar() {
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false);
+        toolbar.setElevation(0);
     }
 
     private void setDrawerIconColor() {
@@ -111,6 +112,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 R.string.close_nav);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+    }
+
+    public Toolbar getToolbar() {
+        return toolbar;
     }
 
     private void setBottomNavigationListener() {
