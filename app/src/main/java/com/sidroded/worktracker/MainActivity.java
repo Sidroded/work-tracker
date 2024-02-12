@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     ActionBarDrawerToggle toggle;
     NavigationView navigationView;
     TextView logOutTextView;
+    TextView userEmailTextView;
+    View navHeaderView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,15 +53,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         logOutTextView = findViewById(R.id.logout_drawer_text_view);
+        navHeaderView = navigationView.getHeaderView(0);
+        userEmailTextView = navHeaderView.findViewById(R.id.text_view_user_email_drawer);
 
         checkAuth();
         setBottomNavigationListener();
         setDefaultFragmentTimer();
 
         configureToolbar();
-        navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this);
-        setDrawerIconOnToolbar();
-        setDrawerIconColor();
+        setDrawerNavigationView();
 
         setLogOutTextViewListener();
     }
@@ -80,6 +82,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+    private void setDrawerNavigationView() {
+        navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this);
+        userEmailTextView.setText(mAuth.getCurrentUser().getEmail());
+    }
+
     private void setLogOutTextViewListener() {
         logOutTextView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,6 +104,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false);
         toolbar.setElevation(0);
+
+        setDrawerIconOnToolbar();
+        setDrawerIconColor();
     }
 
     private void setDrawerIconColor() {

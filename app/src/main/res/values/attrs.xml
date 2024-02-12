@@ -10,5 +10,7 @@
     <attr name="pressedLunchNewTaskButtonColor" format="color"/>
     <attr name="startButtonColor" format="color"/>
     <attr name="pressedStartButtonColor" format="color"/>
+    <attr name="pressedStopButtonColor" format="color"/>
     <attr name="textViewColor" format="color"/>
+    <attr name="toolbarTotalTimeBackground" format="color"/>
 </resources>

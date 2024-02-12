@@ -20,11 +20,13 @@
         <item name="drawerBackgroundColor">@color/blue_100</item>
 
         <item name="toolbarBackgroundColor">@color/white</item>
+        <item name="toolbarTotalTimeBackground">@color/green_200</item>
 
         <item name="lunchNewTaskButtonColor">@color/blue_100</item>
         <item name="pressedLunchNewTaskButtonColor">@color/blue_300</item>
         <item name="startButtonColor">@color/green_100</item>
         <item name="pressedStartButtonColor">@color/green_300</item>
+        <item name="pressedStopButtonColor">@color/orange</item>
     </style>
     
     <style name="DialogAnimation">

@@ -37,4 +37,7 @@
     <string name="start_button">Start</string>
     <string name="stop_button">Stop</string>
     <string name="save_button">Save</string>
+
+    <string name="total_time">Total Time:</string>
+    <string name="total_time_time">00:00</string>
 </resources>
