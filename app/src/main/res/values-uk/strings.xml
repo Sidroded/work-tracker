@@ -11,4 +11,35 @@
     <string name="fill_all_fields_toast">Заповніть всі поля</string>
     <string name="wrong_login_or_pass_toast">Невірний імейл або пароль</string>
     <string name="something_wrong_toast">Ой, щось не так</string>
+    <string name="password_mismatch_toast">Паролі не співпадають</string>
+    <string name="password_symbols_validation_toast">Пароль має бути більше 6 символів</string>
+    <string name="enter_correct_email_toast">Введіть коректний імейл</string>
+
+    <string name="forgot_password_text_view">Забули пароль?</string>
+    <string name="login_hint">Імейл</string>
+    <string name="password_hint">Пароль</string>
+    <string name="repeat_password_hint">Повторити пароль</string>
+
+    <string name="open_nav">Open Nav</string>
+    <string name="close_nav">Close Nav</string>
+
+    <string name="analytic_drawer">Аналітика</string>
+    <string name="task_drawer">Задачі</string>
+    <string name="productivity_drawer">Продуктивність</string>
+    <string name="configuration_drawer">Конфігураця</string>
+    <string name="settings_drawer">Налаштування</string>
+    <string name="company_drawer">Компанія</string>
+    <string name="log_out_drawer">Вийти</string>
+
+    <string name="lunch_stop_button">Lunch Stop</string>
+    <string name="lunch_start_button">Lunch Start</string>
+    <string name="new_task_button">New Task</string>
+    <string name="start_button">Start</string>
+    <string name="stop_button">Stop</string>
+    <string name="save_button">Save</string>
+
+    <string name="total_time">Total Time:</string>
+    <string name="total_time_time">00:00</string>
+
+    <string name="sign_in_with_google">Увійти за допомогою Google</string>
 </resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/d_nav_analytics"
+            android:icon="@drawable/ic_analytics"
+            android:title="@string/analytic_drawer"/>
+
+        <item
+            android:id="@+id/d_nav_tasks"
+            android:icon="@drawable/ic_task"
+            android:title="@string/task_drawer"/>
+
+        <item
+            android:id="@+id/d_nav_productivity"
+            android:icon="@drawable/ic_productivity"
+            android:title="@string/productivity_drawer"/>
+
+        <item
+            android:id="@+id/d_nav_configuration"
+            android:icon="@drawable/ic_configuration"
+            android:title="@string/configuration_drawer"/>
+
+        <item
+            android:id="@+id/d_nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings_drawer"/>
+
+        <item
+            android:id="@+id/d_nav_company"
+            android:icon="@drawable/ic_company"
+            android:title="@string/company_drawer"/>
+    </group>
+
+</menu>

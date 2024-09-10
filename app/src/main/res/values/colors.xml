@@ -12,6 +12,7 @@
     <color name="blue_100">#4992FF</color>
     <color name="blue_200">#1475FF</color>
     <color name="blue_300">#2E5387</color>
+    <color name="blue_350">#5D7393</color>
     <color name="blue_400">#0E2545</color>
     <color name="blue_500">#212D3B</color>
     <color name="blue_600">#101922</color>
@@ -23,6 +24,7 @@
 
     <color name="red_100">#CF3030</color>
     <color name="red_200">#972D16</color>
+    <color name="orange">#FF7A00</color>
 
     <color name="light_grey">#D7D7D7</color>
 </resources>

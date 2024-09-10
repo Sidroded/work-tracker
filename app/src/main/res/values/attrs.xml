@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <attr name="bottomNavColor" format="color"/>
+    <attr name="loginButtonColor" format="color"/>
+    <attr name="textColor" format="color"/>
+    <attr name="backgroundColor" format="color"/>
+    <attr name="toolbarBackgroundColor" format="color"/>
+    <attr name="drawerBackgroundColor" format="color"/>
+    <attr name="lunchNewTaskButtonColor" format="color"/>
+    <attr name="pressedLunchNewTaskButtonColor" format="color"/>
+    <attr name="startButtonColor" format="color"/>
+    <attr name="pressedStartButtonColor" format="color"/>
+    <attr name="pressedStopButtonColor" format="color"/>
+    <attr name="textViewColor" format="color"/>
+    <attr name="toolbarTotalTimeBackground" format="color"/>
 </resources>

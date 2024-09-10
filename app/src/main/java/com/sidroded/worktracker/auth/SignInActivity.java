@@ -14,12 +14,12 @@ import com.sidroded.worktracker.MainActivity;
 import com.sidroded.worktracker.R;
 
 public class SignInActivity extends AppCompatActivity {
-    private static final String TAG = "Work Tracker";
-    private EditText emailEditText;
-    private EditText passwordEditText;
-    private EditText repeatPasswordEditText;
-    private Button signInButton;
-    private FirebaseAuth mAuth;
+    String TAG = "Work Tracker";
+    EditText emailEditText;
+    EditText passwordEditText;
+    EditText repeatPasswordEditText;
+    Button signInButton;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +44,9 @@ public class SignInActivity extends AppCompatActivity {
                     .addOnCompleteListener(task -> {
                         if (task.isSuccessful()) {
                             Intent intent = new Intent(SignInActivity.this, MainActivity.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(intent);
+                            finish();
                         } else {
                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
                             Toast.makeText(SignInActivity.this, R.string.something_wrong_toast, Toast.LENGTH_SHORT).show();
@@ -55,12 +57,16 @@ public class SignInActivity extends AppCompatActivity {
 
     private boolean fieldsValidation() {
         if (emailEditText.getText().toString().isEmpty() || passwordEditText.getText().toString().isEmpty() || repeatPasswordEditText.getText().toString().isEmpty()) {
+            Toast.makeText(SignInActivity.this, R.string.fill_all_fields_toast, Toast.LENGTH_SHORT).show();
             return false;
         } else if (!passwordEditText.getText().toString().equals(repeatPasswordEditText.getText().toString())) {
+            Toast.makeText(SignInActivity.this, R.string.password_mismatch_toast, Toast.LENGTH_SHORT).show();
             return false;
         } else if (passwordEditText.getText().toString().length() < 6) {
+            Toast.makeText(SignInActivity.this, R.string.password_symbols_validation_toast, Toast.LENGTH_SHORT).show();
             return false;
         } else if (!emailEditText.getText().toString().contains("@")) {
+            Toast.makeText(SignInActivity.this, R.string.something_wrong_toast, Toast.LENGTH_SHORT).show();
             return false;
         } else {
             return true;

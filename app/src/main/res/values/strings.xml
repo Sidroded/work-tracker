@@ -10,4 +10,35 @@
     <string name="fill_all_fields_toast">Fill all fields</string>
     <string name="wrong_login_or_pass_toast">Wrong login or password</string>
     <string name="something_wrong_toast">Something goes wrong</string>
+    <string name="password_mismatch_toast">Password mismatch</string>
+    <string name="password_symbols_validation_toast">Password must contain more than 6 characters</string>
+    <string name="enter_correct_email_toast">Enter a valid email</string>
+
+    <string name="forgot_password_text_view">Forgot password?</string>
+    <string name="login_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="repeat_password_hint">Repeat password</string>
+
+    <string name="open_nav">Open Nav</string>
+    <string name="close_nav">Close Nav</string>
+    
+    <string name="analytic_drawer">Analytics</string>
+    <string name="task_drawer">Tasks</string>
+    <string name="productivity_drawer">Productivity</string>
+    <string name="configuration_drawer">Configuration</string>
+    <string name="settings_drawer">Settings</string>
+    <string name="company_drawer">Company</string>
+    <string name="log_out_drawer">Log Out</string>
+
+    <string name="lunch_stop_button">Lunch Stop</string>
+    <string name="lunch_start_button">Lunch Start</string>
+    <string name="new_task_button">New Task</string>
+    <string name="start_button">Start</string>
+    <string name="stop_button">Stop</string>
+    <string name="save_button">Save</string>
+
+    <string name="total_time">Total Time:</string>
+    <string name="total_time_time">00:00</string>
+
+    <string name="sign_in_with_google">Sign In with Google</string>
 </resources>

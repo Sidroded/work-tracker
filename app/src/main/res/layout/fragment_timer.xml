@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    tools:context=".fragments.TimerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinner_tasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/text_view_timer_timer_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textSize="64sp"
+            android:textColor="?attr/textViewColor"
+            android:fontFamily="@font/rubik_regular"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lunch time: "
+                android:textSize="24sp"
+                android:textColor="?attr/textViewColor"
+                android:fontFamily="@font/rubik_regular"
+                android:id="@+id/text_view_lunch_timer_fragment"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:textSize="24sp"
+                android:textColor="?attr/textViewColor"
+                android:fontFamily="@font/rubik_regular"
+                android:id="@+id/text_view_lunch_timer_timer_fragment"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_lunch_timer_timer_fragment"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/selector_button_lunch_new_task_save"
+                android:text="@string/lunch_start_button"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="?attr/textColor" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_new_task_timer_fragment"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:text="@string/new_task_button"
+                android:textColor="?attr/textColor"
+                android:fontFamily="@font/rubik_medium"
+                android:background="@drawable/selector_button_lunch_new_task_save" />
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_start_timer_fragment"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_start_button"
+            android:text="@string/start_button"
+            android:textColor="?attr/textColor"
+            android:textSize="48sp"
+            android:fontFamily="@font/rubik_bold"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_save_timer_fragment"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/save_button"
+            android:textSize="24sp"
+            android:textColor="?attr/textColor"
+            android:fontFamily="@font/rubik_regular"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_button_lunch_new_task_save" />
+    </LinearLayout>
+
+</FrameLayout>
