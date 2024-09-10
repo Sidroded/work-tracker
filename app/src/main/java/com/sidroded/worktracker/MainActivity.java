@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private void setDrawerNavigationView() {
         navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this);
-        userEmailTextView.setText(mAuth.getCurrentUser().getEmail());
+        //userEmailTextView.setText(mAuth.getCurrentUser().getEmail());
     }
 
     private void setLogOutTextViewListener() {

@@ -40,4 +40,6 @@
 
     <string name="total_time">Total Time:</string>
     <string name="total_time_time">00:00</string>
+
+    <string name="sign_in_with_google">Увійти за допомогою Google</string>
 </resources>
